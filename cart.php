@@ -41,7 +41,7 @@ foreach ($products as $product) {
         echo "</td>";
         $colors = explode(",", $color);
 
-        echo "<select type='text' name='color'>";
+        echo "<select class='productsizebutton productbuttondesignPHP' type='text' name='color'>";
         foreach ($colors as $color) {
             echo "<option value='$color'>$color</option>";
         }
@@ -49,15 +49,16 @@ foreach ($products as $product) {
         echo "<td>";
         $sizes = explode(",", $size);
 
-        echo "<select type='text' name='size'>";
+        echo "<select class='productsizebutton productbuttondesignPHP' type='text' name='size'>";
         foreach ($sizes as $size) {
             echo "<option value='$size'>$size</option>";
         }
         echo "</select>";
+        
         echo "<td>";
         echo "<input type='hidden' name='amount' value='1'>";
         echo "<td>";
-        echo "<button type='submit' name='action' value='add'>Add to cart</button>";
+        echo "<button class='addprodukt' type='submit' name='action' value='add'><p>Add to Cart</p></button>";
         echo "</form>";
         echo "</tr>";
     } else {

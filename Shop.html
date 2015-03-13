@@ -8,9 +8,12 @@
         <link type="text/css" rel="stylesheet" href="css/test.css">
         <link type="text/css" rel="stylesheet" href="css/navtest.css">
         <link rel="icon" type="image/ico" href="img/favicon.ico">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jPaginate.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        
     </head>
     <body>
         <div id="wrapper">
@@ -100,46 +103,44 @@
             </div>
             <div class='container'>
                 <div class='row'>
-                    <div class='col-sm-3 colfärg1'>
+                    <div class='col-sm-3 '>
                         <div id="sorting-list">
                             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                 <h3 class="">FILTER</h3>
                                 <div class="panel ">
                                     <div class="panel-heading" role="tab" id="headingKATAGORI">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseKATAGORI" aria-expanded="false" aria-controls="collapseKATAGORI">
-                                                KATAGORI
-                                            </a>
-                                        </h4>
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseKATAGORI" aria-expanded="false" aria-controls="collapseKATAGORI">
+                                            <h4 class="panel-title">  KATAGORI</h4>
+                                        </a>
                                     </div>
-                                    <div id="collapseKATAGORI" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingKATAGORI">
-                                        <div class="panel-body">
-                                            <div class="btn-group katagoricss" data-toggle="buttons">
-                                                <label class="btn ">
+                                    <div id="collapseKATAGORI " class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingKATAGORI">
+                                        <div class="panel-body ">
+                                            <div class="btn-group katagoricss " data-toggle="buttons">
+                                                <label class="btn btn2">
                                                     <input type="radio" name="options" id="option1" autocomplete="off" > <p>JACKOR</p>
                                                 </label>
-                                                <label class="btn ">
+                                                <label class="btn btn2">
                                                     <input type="radio" name="options" id="option2" autocomplete="off">  <p>TRÖJA</p>
                                                 </label>
-                                                <label class="btn ">
+                                                <label class="btn btn2">
                                                     <input type="radio" name="options" id="option3" autocomplete="off">  <p>BYXOR</p>
                                                 </label>
-                                                <label class="btn ">
-                                                    <input type="radio" name="options" id="option4" autocomplete="off" > <p> UNDERKLÄDER </p>
+                                                <label class="btn btn2">
+                                                    <input type="radio" name="options" id="option4" autocomplete="off" > <p> UNDERKLÄDER </p> 
                                                 </label>
-                                                <label class="btn ">
+                                                <label class="btn btn2">
                                                     <input type="radio" name="options" id="option5" autocomplete="off">  <p>BADKLÄDER</p>
                                                 </label>
-                                                <label class="btn ">
+                                                <label class="btn btn2">
                                                     <input type="radio" name="options" id="option6" autocomplete="off">  <p>HANDSKAR</p>
                                                 </label>
-                                                <label class="btn ">
+                                                <label class="btn btn2">
                                                     <input type="radio" name="options" id="option7" autocomplete="off" > <p> SKJORTOR</p>
                                                 </label>
-                                                <label class="btn ">
+                                                <label class="btn btn2">
                                                     <input type="radio" name="options" id="option8" autocomplete="off"> <p> KEPSAR</p>
                                                 </label>
-                                                <label class="btn ">
+                                                <label class="btn btn2">
                                                     <input type="radio" name="options" id="option9" autocomplete="off"> <p> T-SHIRTS</p>
                                                 </label>
                                             </div>
@@ -148,11 +149,11 @@
                                 </div>
                                 <div class="panel ">
                                     <div class="panel-heading" role="tab" id="headingMARKE">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseMARKE" aria-expanded="false" aria-controls="collapseMARKE">
-                                                MÄRKE
-                                            </a>
-                                        </h4>
+
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseMARKE" aria-expanded="false" aria-controls="collapseMARKE">
+                                            <h4 class="panel-title">    MÄRKE </h4>
+                                        </a>
+
                                     </div>
                                     <div id="collapseMARKE" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingMARKE">
                                         <div class="panel-body">
@@ -179,24 +180,46 @@
                                 </div>
                                 <div class="panel">
                                     <div class="panel-heading" role="tab" id="headingFARG">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFARG" aria-expanded="false" aria-controls="collapseFARG">
-                                                FÄRG
-                                            </a>
-                                        </h4>
+
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFARG" aria-expanded="false" aria-controls="collapseFARG">
+                                            <h4 class="panel-title">       FÄRG </h4>
+                                        </a>
+
                                     </div>
                                     <div id="collapseFARG" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFARG">
-                                        <div class="panel-body">
+                                        <div class="panel-body" >
+
+                                            <div class="btn-group " data-toggle="buttons">
+                                                <label class="btn färg" style="background-color: blue;">
+                                                    <input type="radio" name="options" id="blue" autocomplete="off" >
+                                                </label>
+                                                <label class="btn färg" style="background-color: red;">
+                                                    <input type="radio" name="options" id="red" autocomplete="off" >
+                                                </label>
+                                                <label class="btn färg" style="background-color: green;">
+                                                    <input type="radio" name="options" id="green" autocomplete="off" >
+                                                </label>
+                                                <label class="btn färg" style="background-color: yellow;">
+                                                    <input type="radio" name="options" id="yellow" autocomplete="off" >
+                                                </label>
+                                                <label class="btn färg" style="background-color: white;">
+                                                    <input type="radio" name="options" id="white" autocomplete="off" >
+                                                </label>
+                                                <label class="btn färg" style="background-color: black;">
+                                                    <input type="radio" name="options" id="black" autocomplete="off" >
+                                                </label>
+                                                
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="panel">
                                     <div class="panel-heading" role="tab" id="headingPRIS">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#collapsePRIS" aria-expanded="false" aria-controls="collapsePRIS">
-                                                PRIS
-                                            </a>
-                                        </h4>
+
+                                        <a class="collapsed " data-toggle="collapse" data-parent="#accordion" href="#collapsePRIS" aria-expanded="false" aria-controls="collapsePRIS">
+                                            <h4 class="panel-title">       PRIS    </h4>
+                                        </a>
+
                                     </div>
                                     <div id="collapsePRIS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPRIS">
                                         <div class="panel-body">
@@ -223,11 +246,11 @@
                                 </div>
                                 <div class="panel">
                                     <div class="panel-heading" role="tab" id="headingSTORLEK">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSTORLEK" aria-expanded="false" aria-controls="collapseSTORLEK">
-                                                STORLEK
-                                            </a>
-                                        </h4>
+
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSTORLEK" aria-expanded="false" aria-controls="collapseSTORLEK">
+                                            <h4 class="panel-title">        STORLEK  </h4>
+                                        </a>
+
                                     </div>
                                     <div id="collapseSTORLEK" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSTORLEK">
                                         <div class="panel-body">
@@ -245,224 +268,71 @@
 
                     <div class='col-sm-9 top-shop'>
                         <div class="row">
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
+                            
+                            
+ 
+                            
 
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">   
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">   
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">    
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-                            <a href="Product.html">     
-                                <div class="col-sm-3 produkter">
-                                    <img class="img-responsive "href="#" src="http://placehold.it/400x400">
-                                    <h3>JEANS</h3>
-                                    <h3>BYXOR-MICROSOFT</h3>
-                                    <h4>166KR</h4>
-                                </div></a>
-
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="col-sm-12 productslist">
+                    
+                            </div>
 
 
 
                         </div>
-                        <div class="col-sm-12 "> 
-                            <ul class="pagination pilarna">
-                                <li><a href="#">1</a></li>
-                                <li class="active"><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">...</a></li>
-                                <li><a href="#">7</a></li>
-                            </ul>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
             <div class="jumbotron backgroundfooter">
                 <div class="container">
-                    
-                        <div class="col-sm-4 footercontent">
-                            <h2>© 2014 Clothes Store </h2>
-                            <p>By David KB, Viktor RT <br>
-                                Albin S, Tony T</p>
-                        </div>
-                        <div class="col-sm-4 footercontent">
-                            <h2>Find us</h2>
-                            <p>Adress:</p>
-                            <p>City:</p>
-                            <p>Phone nr:</p>
-                        </div>
-                        <div class="col-sm-4 footercontent">
-                            <h2>Follow us</h2>
-                        </div>
-                    
+
+                    <div class="col-sm-4 footercontent">
+                        <h2>© 2014 Clothes Store </h2>
+                        <p>By David KB, Viktor RT <br>
+                            Albin S, Tony T</p>
+                    </div>
+                    <div class="col-sm-4 footercontent">
+                        <h2>Find us</h2>
+                        <p>Adress:</p>
+                        <p>City:</p>
+                        <p>Phone nr:</p>
+                    </div>
+                    <div class="col-sm-4 footercontent">
+                        <h2>Follow us</h2>
+                    </div>
+
                 </div>
             </div>
             <script>
-                jQuery(document).ready(function() {
+                jQuery(document).ready(function () {
                     $(".dropdown").hover(
-                            function() {
+                            function () {
                                 $('.dropdown-menu', this).fadeIn("fast");
                             },
-                            function() {
+                            function () {
                                 $('.dropdown-menu', this).fadeOut("fast");
                             });
                 });
+                
+                
+                
+                
+                $(document).ready(function(){  
+    $("#content").jPaginate();                         
+});  
+                
+                
+                
+                
             </script>
         </div>
     </body>
